@@ -36,10 +36,6 @@
   padding-top: 15px;
 }
 @media screen and (min-width: 768px) {
-  .container {
-    width: 700px;
-    margin: 0 auto;
-  }
   .footer {
     height: 71px;
   }
@@ -50,11 +46,5 @@
 
   .instface {
     margin: 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 960px;
   }
 }

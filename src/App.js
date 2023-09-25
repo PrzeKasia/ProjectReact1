@@ -1,9 +1,9 @@
 import "./App.css";
-import Nav from "./components/nav/Nav";
-import Footer from "./components/footer/Footer";
-import Header from "./components/header/Header";
-import Offer from "./components/offer/Offer";
-import Specialists from "./components/specialists/Specialists";
+import Nav from "./components/Nav/Nav";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Offer from "./components/Offer/Offer";
+import Specialists from "./components/Specialists/Specialists";
 
 function App() {
   return (

@@ -1,5 +1,14 @@
-import React from "react";
 import "./Offer.css";
+import OfferItem from "./OfferItem";
+
+const offers = [
+  { name: "Usługa 1", isNew: true },
+  { name: "Usługa 2", isNew: false },
+  { name: "Usługa 3", isNew: false },
+  { name: "Usługa 4", isNew: false },
+  { name: "Usługa 5", isNew: false },
+  { name: "Usługa 6", isNew: false },
+];
 
 export default function Offer() {
   return (
@@ -8,16 +17,9 @@ export default function Offer() {
         <h2 className="headerServices">Czym zajmuje się nasza firma?</h2>
 
         <div className="containerServices">
-          <div className="service">
-            <p className="serviceOne">Usługa 1</p>
-            <p className="novelty">(nowość)</p>
-            <div className="dot"></div>
-          </div>
-          <div className="service">Usługa 2</div>
-          <div className="service">Usługa 3</div>
-          <div className="service">Usługa 4</div>
-          <div className="service">Usługa 5</div>
-          <div className="service">Usługa 6</div>
+          {offers.map((offer, index) => (
+            <OfferItem key={index} offer={offer} />
+          ))}
         </div>
       </div>
     </section>

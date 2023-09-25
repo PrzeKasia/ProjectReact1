@@ -1,4 +1,3 @@
-import React from "react";
 import "./Specialists.css";
 
 export default function Specialists() {
