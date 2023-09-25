@@ -1,0 +1,186 @@
+.specialists {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 34px;
+  margin-bottom: 68px;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  margin: 0 auto;
+}
+
+.specialist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.fotoOne {
+  width: 221px;
+  height: 221px;
+  border-radius: 50%;
+  background-image: url(osoba1.jpg);
+  background-size: cover;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.specialist:nth-of-type(odd) .description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.order:nth-last-of-type(odd) {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.specialist:nth-last-of-type(even) {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-top: 54px;
+  margin-left: 14px;
+  margin-right: 14px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fotoTwo {
+  order: -1;
+  width: 221px;
+  height: 221px;
+  border-radius: 50%;
+  background-image: url(osoba2.png);
+  background-size: cover;
+}
+
+.order:nth-last-of-type(even) {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.specialist:nth-of-type(even) .description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  margin-top: 20px;
+  text-align: justify;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 700px;
+    margin: 0 auto;
+  }
+  .specialists {
+    gap: 40px;
+    margin-top: 51px;
+    margin-bottom: 51px;
+  }
+
+  .heading {
+    text-align: left;
+    margin: initial;
+  }
+
+  .order:nth-last-of-type(odd) {
+    justify-content: flex-start;
+    width: 70%;
+  }
+
+  .specialist:nth-last-of-type(odd) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-right: 0px;
+    gap: 40px;
+  }
+
+  .fotoOne {
+    height: 190px;
+    width: 190px;
+  }
+
+  .specialist:nth-of-type(odd) .description {
+    text-align: left;
+  }
+
+  .specialist:nth-last-of-type(even) {
+    margin-left: 0px;
+    margin-right: 0px;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .fotoTwo {
+    height: 190px;
+    width: 190px;
+    order: 0;
+  }
+
+  .order:nth-last-of-type(even) {
+    width: 70%;
+    justify-content: flex-end;
+  }
+
+  .specialist:nth-of-type(even) .description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: right;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+
+  .specialist:nth-last-of-type(odd) {
+    gap: 60px;
+  }
+
+  .description:nth-last-of-type(odd) {
+    text-align: left;
+  }
+
+  .fotoOne {
+    height: 221px;
+    width: 221px;
+  }
+
+  .specialist:nth-last-of-type(even) {
+    gap: 60px;
+    margin-top: 0px;
+  }
+
+  .fotoTwo {
+    order: 0;
+    height: 221px;
+    width: 221px;
+  }
+}
